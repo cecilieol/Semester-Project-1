@@ -126,12 +126,12 @@ header {
 }
 
 .button1 {
-    top: 50%;
+    top: 45%;
     right: 4%;
 }
 
 .button2 {
-    top: 45%;
+    top: 40%;
     left: 9%;
 }
 
@@ -146,15 +146,12 @@ header {
 }
 
 .main-photo fieldset {
-    position: absolute;
     background: #fff;
     border: none;
     box-shadow: 3px 3px 5px #222;
     padding: 0 0 0 15px;
-    width: 40%;
+    width: auto;
     height: auto;
-    bottom: 10%;
-    left: 5%;
 }
 
 /* Footer */
@@ -235,9 +232,21 @@ footer button {
 
 }
 
-@media(min-width: 907px) {
+@media(min-width: 931px) {
 
     .navbar {
         margin-top: 90px;
+    }
+
+    .main-photo fieldset {
+        background: #fff;
+        border: none;
+        box-shadow: 3px 3px 5px #222;
+        padding: 0 0 0 15px;
+        width: 40%;
+        height: auto;
+        bottom: 25%;
+        left: 5%;
+        position: absolute;
     }
 }
