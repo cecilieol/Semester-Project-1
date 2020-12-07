@@ -39,7 +39,6 @@ header {
 }
 
 .title {
-    float: left;
     display: flex;
     width: 10%;
     padding-top: 15px;
@@ -77,7 +76,7 @@ header {
     font-size: 20px;
 }
 
-@media(min-width: 700px) {
+@media(min-width: 650px) {
 
     header {
         overflow: hidden;
@@ -90,14 +89,13 @@ header {
     .navbar {
         display: flex;
         float: right;
-        margin-top: 50px;
     }
 
     .hamburger-label {
         display: none;
     }
 
-    .dropbutton, .dropdown-content {
+    .dropbutton {
         padding: 0 50px 0 50px;
     }
 
@@ -108,7 +106,9 @@ header {
     .navbar:hover .dropdown-content {
         display: grid;
         background-color: #82FF4B;
-        padding: 0 50px 0 50px;
+        padding: 10px 0 10px 52px;
+        position: absolute;
+        width: 100%; 
     }
 
 }
