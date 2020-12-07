@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+h1, h2, h3, .dropbutton {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h3, .dropbutton {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background: #82FF4B;
+    min-height: 200px;
+}
+
+#logo {
+    width: 200px;
+    float: left;
+}
+
+.title {
+    float: left;
+    display: flex;
+    width: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar, #hamburger-menu {
+    display: none;
+}
+
+.hamburger-label {
+    float: right;
+    color: #000;
+    padding: 10px;
+    display: block;
+}
+
+#hamburger-menu:checked ~ .navbar {
+    display: block;
+}
+
+.dropdown-content {
+    display: grid;
+    padding-left: 10px;
+}
+
+.dropbutton {
+    border: none;
+    background: none;
+}
+
+.dropdown-content a {
+    color: black;
+    font-family: futura-pt, sans-serif;
+    font-size: 20px;
+}
+
+@media(min-width: 700px) {
+
+    header {
+        overflow: hidden;
+    }
+
+    #logo {
+        float: left;
+    }
+
+    .navbar {
+        display: flex;
+        float: right;
+        margin-top: 50px;
+    }
+
+    .hamburger-label {
+        display: none;
+    }
+
+    .dropbutton, .dropdown-content {
+        padding: 0 50px 0 50px;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    .navbar:hover .dropdown-content {
+        display: grid;
+        background-color: #82FF4B;
+        padding: 0 50px 0 50px;
+    }
+
+}
