@@ -24,7 +24,7 @@ h3 {
 }
 
 h4, .dropbutton {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
 }
 
@@ -37,7 +37,7 @@ p {
 
 header {
     background: #82FF4B;
-    min-height: 200px;
+    min-height: 150px;
 }
 
 #logo {
@@ -54,12 +54,12 @@ header {
 
 .navbar, #hamburger-menu {
     display: none;
-    padding-top: 225px;
+    padding-top: 180px;
 }
 
 .hamburger-label {
     float: right;
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 10px;
     background-color: #82FF4B;
 }
