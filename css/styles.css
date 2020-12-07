@@ -28,6 +28,8 @@ p {
     font-size: 18px;
 }
 
+/* HEADER */
+
 header {
     background: #82FF4B;
     min-height: 200px;
@@ -62,7 +64,6 @@ header {
 
 .dropdown-content {
     display: grid;
-    padding-left: 10px;
 }
 
 .dropbutton {
