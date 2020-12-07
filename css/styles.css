@@ -3,7 +3,7 @@ body {
     font-family: sans-serif;
   }
 
-h1, h2, h3, .dropbutton {
+h1, h2, h3, h4, .dropbutton {
     font-family: futura-pt, sans-serif;
     font-style: normal;
 }
@@ -38,6 +38,7 @@ p {
 header {
     background: #82FF4B;
     min-height: 150px;
+    overflow: hidden;
 }
 
 #logo {
@@ -48,8 +49,7 @@ header {
 .title {
     float: left;
     width: 10%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
 }
 
 .navbar, #hamburger-menu {
@@ -86,6 +86,7 @@ header {
 
 .dropdown-content {
     display: grid;
+    padding-left: 8px;
 }
 
 .dropbutton {
@@ -108,19 +109,36 @@ footer {
     margin-bottom: -30px;
 }
 
-@media(min-width: 650px) {
+.footer-row {
+    text-align: center;
+}
+  
+.footer-info {
+    padding: 5px;
+    line-height: 50%;
+    color: #000;
+}
+  
+.footer-info h4, .footer-info p, .footer-info a {
+    color: #000;
+}
 
-    header {
-        overflow: hidden;
-    }
+footer button {
+    color: #000;
+    background-color:#FF8C1A;
+    border: none;
+    border-radius: 4px;
+    width: 140px;
+    height: 30px;
+    font-size: 18px;
+}
 
-    #logo {
-        float: left;
-    }
+@media(min-width: 700px) {
 
     .navbar {
         display: flex;
         float: right;
+        padding-top: 0px;
     }
 
     .hamburger-label {
@@ -128,7 +146,7 @@ footer {
     }
 
     .dropbutton {
-        padding: 0 50px 0 50px;
+        padding: 0 80px 0 50px;
     }
 
     .dropdown-content {
@@ -143,4 +161,21 @@ footer {
         width: 100%; 
     }
 
+    .footer-row {
+        display: flex;
+        max-width: 1280px;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15px;
+        color: #000;
+      }
+
+}
+
+@media(min-width: 907px) {
+
+    .navbar {
+        margin-top: 90px;
+    }
 }
