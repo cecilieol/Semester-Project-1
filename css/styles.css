@@ -52,6 +52,11 @@ header {
     padding-top: 5px;
 }
 
+.title a {
+    text-decoration: none;
+    color: #000;
+}
+
 .navbar, #hamburger-menu {
     display: none;
     padding-top: 180px;
@@ -153,6 +158,27 @@ header {
     height: auto;
 }
 
+main h1, h2, h3 {
+    text-align: center;
+}
+
+.explore {
+    display: block;
+}
+
+.explore-grid {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.explore-grid h3 {
+    margin-top: 5px;
+}
+
+.explore-grid img {
+    width: 100%;
+}
+
 .calendar {
     box-sizing: border-box;
     width: 100%;
@@ -166,6 +192,11 @@ header {
     background: #82FF4B;
     border: none;
     margin: 10px;
+}
+
+.calendar fieldset:last-child {
+    padding-left: 20px;
+    line-height: 94%;
 }
 
 .month {
@@ -184,12 +215,12 @@ header {
 
 .prev {
     float: left;
-    margin-top: 75px;
+    margin-top: 10px;
 }
 
 .next {
     float: right;
-    margin-top: 75px;
+    margin-top: 10px;
 }
 
 .weekdays {
@@ -221,6 +252,15 @@ header {
     background: #82FF4B;
     color: white !important;
   }
+
+/* Exhibitions */
+
+.exhibitions {
+    display: block;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 /* Footer */
 
@@ -294,6 +334,20 @@ footer button {
         width: 100%; 
     }
 
+    .calendar {
+        width: 700px;
+    }
+
+    .exhibitions-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .exhibitions {
+        width: 500px;
+    }
+
     .footer-row {
         display: flex;
         max-width: 1280px;
@@ -302,11 +356,7 @@ footer button {
         margin-right: auto;
         padding-top: 15px;
         color: #000;
-      }
-
-      .calendar {
-        width: 700px;
-
+    }
 }
 
 @media(min-width: 931px) {
@@ -325,5 +375,40 @@ footer button {
         bottom: 25%;
         left: 5%;
         position: absolute;
+    }
+
+    .explore {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .explore-grid {
+        width: 30%;
+    }
+    
+    .explore-grid img {
+        margin-left: 20px;
+        width: 90%;
+    }
+
+    .calendar {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .calendar fieldset:first-child {
+        float: left;
+        margin-right: 20px;
+        width: 600px;
+    }
+
+    .calendar fieldset:last-child {
+        float: left;
+        margin-left: 20px;
+        width: 600px;
     }
 }

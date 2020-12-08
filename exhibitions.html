@@ -1,58 +1,124 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Community Science Museum - Permanent Exhibitions</title>
+    <title>Community Science Museum</title>
     <meta name="description" content="Community Science Museum official website." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/dvw8esl.css">
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <a href="index.html"><img src="Visuals/images/icon-1719742.svg" id="logo"> </a>
+        <div class="title">
+            <a href="index.html">
+                <h4>Community Science Museum</h4>
+            </a>
+        </div>
+        <label class="hamburger-label" for="hamburger-menu">
+            <div class="hamburger-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </label>
+        <input type="checkbox" id="hamburger-menu">
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbutton">Explore</button>
+                <div class="dropdown-content">
+                    <a href="kids.html">For Kids</a>
+                    <a href="teachers.html">For Teachers</a>
+                    <a href="researchers.html">For Researchers</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbutton">Exhibitions</button>
+                <div class="dropdown-content">
+                    <a href="exhibitions.html">Permanent Exhibitions</a>
+                    <a href="special-events.html">Special Events</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbutton">Information</button>
+                <div class="dropdown-content">
+                    <a href="visit.html">Visit</a>
+                    <a href="get-involved.html">Get Involved</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
         <h1>Permanent Exhibitions</h1>
-        <div class="exhibitions">
-            <h2>Cosmology</h2>
-            <p>Explore the wonders of our cosmos. Our fantastic exhibition, "The Sky Above Us", explores the night sky
-                and what we can see and know about the universe around us. We'll locate the various constellations and
-                galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.
-            </p>
-            <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo's telescope, to the
-                latest exploration of the planets in our solar system.</p>
-        </div>
-        <div class="exhibitions">
-            <h2>Evolution</h2>
-            <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we
-                come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework
-                for exploring and understanding our place in this world.</p>
-            <p>Discover the origins of life on this planet and how the species we know today have evolved our time. You
-                can also take some time to meet a few of the creatures who didn't survive, including our Woolly Mammoth,
-                the Dodos, and a number of dinosaurs too.</p>
-        </div>
-        <div class="exhibitions">
-            <h2>Robotics and AI</h2>
-            <p>The information revolution is here and robotics and artificial intelligence are the science of the
-                future. From useful home applications of AI to industrial uses of robotics, the future is here. You can
-                even say hello and shake the hand of Rob the Robot.</p>
-        </div>
-        <div class="exhibitions">
-            <h2>Biology and Medicine</h2>
-            <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights
-                into the great wonders of the tiny world.</p>
-            <p>For many people their life expectancy is much longer and their quality of life much improved, thanks to
-                the growth of our understanding of medicine. Over a series of exhibits we explore the history of
-                medicine and take a look at some major breakthroughs including the discovery of penicillin and the first
-                heart transplant.</p>
-            <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing animals
-                in the wild. Often our fellow creatures have beat us to it.</p>
-        </div>
-        <div class="exhibitions">
-            <h2>Ecology</h2>
-            <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes
-                that scientists explore how to create a sustainable future not just for humans but for the whole planet.
-            </p>
-            <p>In our ecology section of the museum, we unpack the dangers we currently face including global warming,
-                extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a
-                brighter future.</p>
+        <div class="exhibitions-grid">
+            <div class="exhibitions">
+                <h2>Cosmology</h2>
+                <img src="Visuals/images/celso-405219.jpg">
+                <p>Explore the wonders of our cosmos. Our fantastic exhibition, "The Sky Above Us", explores the night
+                    sky
+                    and what we can see and know about the universe around us. We'll locate the various constellations
+                    and
+                    galaxies that can be seen and learn a bit about the early navigators who used the stars to travel
+                    by.
+                </p>
+                <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo's telescope, to the
+                    latest exploration of the planets in our solar system.</p>
+            </div>
+            <div class="exhibitions">
+                <h2>Evolution</h2>
+                <img src="visuals/images/skeleton-414543_1920.jpg">
+                <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do
+                    we
+                    come from and how did we get here? Since Darwin proposed his theory of evolution we have had a
+                    framework
+                    for exploring and understanding our place in this world.</p>
+                <p>Discover the origins of life on this planet and how the species we know today have evolved our time.
+                    You
+                    can also take some time to meet a few of the creatures who didn't survive, including our Woolly
+                    Mammoth,
+                    the Dodos, and a number of dinosaurs too.</p>
+            </div>
+            <div class="exhibitions">
+                <h2>Robotics and AI</h2>
+                <img src="visuals/images/andrew-ruiz-348421.jpg">
+                <p>The information revolution is here and robotics and artificial intelligence are the science of the
+                    future. From useful home applications of AI to industrial uses of robotics, the future is here. You
+                    can
+                    even say hello and shake the hand of Rob the Robot.</p>
+            </div>
+            <div class="exhibitions">
+                <h2>Biology and Medicine</h2>
+                <img src="visuals/images/heart-2607178_1920.jpg">
+                <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique
+                    insights
+                    into the great wonders of the tiny world.</p>
+                <p>For many people their life expectancy is much longer and their quality of life much improved, thanks
+                    to
+                    the growth of our understanding of medicine. Over a series of exhibits we explore the history of
+                    medicine and take a look at some major breakthroughs including the discovery of penicillin and the
+                    first
+                    heart transplant.</p>
+                <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing
+                    animals
+                    in the wild. Often our fellow creatures have beat us to it.</p>
+            </div>
+            <div class="exhibitions">
+                <h2>Ecology</h2>
+                <img src="visuals/images/genoa-956405_1920.jpg">
+                <p>As we learn more and more of the impact humans are having on the planet, the more important it
+                    becomes
+                    that scientists explore how to create a sustainable future not just for humans but for the whole
+                    planet.
+                </p>
+                <p>In our ecology section of the museum, we unpack the dangers we currently face including global
+                    warming,
+                    extinction of species, and pollution. But we also focus on the positive ways we can all contribute
+                    to a
+                    brighter future.</p>
+            </div>
         </div>
     </main>
 </body>
