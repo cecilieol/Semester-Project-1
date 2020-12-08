@@ -64,7 +64,6 @@ header {
     background-color: #82FF4B;
 }
 
-
 #hamburger-menu:checked ~ .navbar {
     display: block;
 }
@@ -148,11 +147,80 @@ header {
 .main-photo fieldset {
     background: #fff;
     border: none;
-    box-shadow: 3px 3px 5px #222;
+    box-shadow: 2px 2px 4px #222;
     padding: 0 0 0 15px;
     width: auto;
     height: auto;
 }
+
+.calendar {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.calendar li {
+    list-style-type: none;
+}
+
+.calendar fieldset {
+    background: #82FF4B;
+    border: none;
+    margin: 10px;
+}
+
+.month {
+    margin: 10px 5px 0 5px;
+    padding-top: 5px;
+    width: 100%;
+    height: 30%;
+    background: #82FF4B;
+    text-align: center;
+}
+
+.month ul {
+    margin: 10px;
+    padding: 0;
+}
+
+.prev {
+    float: left;
+    margin-top: 75px;
+}
+
+.next {
+    float: right;
+    margin-top: 75px;
+}
+
+.weekdays {
+    background: #ccc;
+    margin: 0 0 0 5px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.days {
+    background: #ddd;
+    margin: 0 0 0 5px;;
+    padding: 10px 0;
+    text-align: center;
+    font-size:12px;
+}
+
+.weekdays li, .days li {
+    display: inline-block;
+    width: 13.6%;
+}
+
+.days li {
+    padding-bottom: 15px;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #82FF4B;
+    color: white !important;
+  }
 
 /* Footer */
 
@@ -189,6 +257,12 @@ footer button {
     width: 140px;
     height: 30px;
     font-size: 18px;
+}
+
+@media(max-width: 603px) {
+    .weekdays li, .days li {
+        width: 12%;
+    }
 }
 
 @media(min-width: 700px) {
@@ -229,6 +303,9 @@ footer button {
         padding-top: 15px;
         color: #000;
       }
+
+      .calendar {
+        width: 700px;
 
 }
 
