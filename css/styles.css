@@ -262,6 +262,10 @@ main h1, h2, h3 {
     margin-right: 10px;
 }
 
+.exhibitions img {
+    width: 100%;
+}
+
 /* Footer */
 
 footer {
