@@ -28,9 +28,10 @@ h4, .dropbutton {
     font-weight: 500;
 }
 
-p {
+p, a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    color: #000;
 }
 
 /* HEADER */
@@ -118,13 +119,16 @@ header {
     height: auto;
 }
 
-.button {
+#button1, #button2, #button3, #button4 {
+    display: none;
+}
+
+.button1, .button2, .button3, .button4 {
     background-color: #FF8C1A;
     border: none;
     border-radius: 50%;
     width: 4%;
     height: 7%;
-    display: flex;
     position: absolute;
     box-shadow: 3px 3px 5px #222;
 }
@@ -147,6 +151,30 @@ header {
 .button4 {
     top: 8%;
     left: 35%;
+}
+
+.pop-up {
+    display: none;
+}
+
+#button1:checked ~ .pop-up {
+    display: block;
+}
+
+#button2:checked ~ .pop-up {
+    display: block;
+}
+
+#button3:checked ~ .pop-up {
+    display: block;
+}
+
+#button4:checked ~ .pop-up {
+    display: block;
+}
+
+.pop-up {
+    margin-bottom: 5px;
 }
 
 .main-photo fieldset {
@@ -253,6 +281,20 @@ main h1, h2, h3 {
     color: white !important;
   }
 
+/* Kids */
+
+.kids {
+    margin: 10px;
+}
+
+.kids img {
+    width: 100%;
+}
+
+/* Teachers */
+
+/* Researchers */
+
 /* Exhibitions */
 
 .exhibitions {
@@ -264,6 +306,20 @@ main h1, h2, h3 {
 
 .exhibitions img {
     width: 100%;
+}
+
+/* Special events */
+
+/* Visit */
+
+/* Get involved */
+
+/* About */
+
+.about {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 /* Footer */
@@ -303,6 +359,13 @@ footer button {
     font-size: 18px;
 }
 
+
+
+
+
+
+/* MEDIA */
+
 @media(max-width: 603px) {
     .weekdays li, .days li {
         width: 12%;
@@ -338,6 +401,21 @@ footer button {
         width: 100%; 
     }
 
+    .explore {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .explore-grid {
+        width: 30%;
+    }
+    
+    .explore-grid img {
+        margin-left: 20px;
+        width: 90%;
+    }
+
     .calendar {
         width: 700px;
     }
@@ -350,6 +428,26 @@ footer button {
     
     .exhibitions {
         width: 500px;
+    }
+
+    .kids, .teachers, .researchers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .kids img, .teachers img, .researchers img{
+        width: 700px;
+        height: 100%;
+    }
+
+    .special-events, .visit, .get-involved {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer-row {
@@ -381,19 +479,13 @@ footer button {
         position: absolute;
     }
 
-    .explore {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .explore-grid {
-        width: 30%;
-    }
-    
-    .explore-grid img {
-        margin-left: 20px;
-        width: 90%;
+    .pop-up {
+        z-index: 100;
+        top: 50%;
+        left: 40%;
+        position: absolute;
+        width: 100%;
+        height: auto;
     }
 
     .calendar {
@@ -414,5 +506,14 @@ footer button {
         float: left;
         margin-left: 20px;
         width: 600px;
+    }
+
+    .about {
+        width: 80%;
+    }
+
+    .about img {
+        float: left;
+        margin: 0 10px 0 10px;
     }
 }
