@@ -180,10 +180,18 @@ header {
 .main-photo fieldset {
     background: #fff;
     border: none;
-    box-shadow: 2px 2px 4px #222;
+    box-shadow: 1px 1px 3px #222;
     padding: 0 0 0 15px;
     width: auto;
     height: auto;
+    opacity: 90%;
+}
+
+.main-photo fieldset img {
+    width: auto;
+    height: auto;
+    float: left;
+    margin: 5px;
 }
 
 main h1, h2, h3 {
@@ -280,6 +288,33 @@ main h1, h2, h3 {
     background: #82FF4B;
     color: white !important;
   }
+
+.icon-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 25px 0 25px;
+}
+
+.icon-column h3{
+    margin-top: 0;
+}
+
+
+.share {
+    text-align: center;
+}
+
+.share-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 25px 15px 25px;  
+}
+
+.share-row img {
+    margin: 0 15px 15px 15px;
+}
 
 /* Kids */
 
@@ -475,7 +510,7 @@ footer button {
         width: 40%;
         height: auto;
         bottom: 25%;
-        left: 5%;
+        left: 0%;
         position: absolute;
     }
 
