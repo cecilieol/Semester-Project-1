@@ -478,6 +478,11 @@ footer button:active {
 /* MEDIA */
 
 @media(max-width: 500px) {
+
+    .days {
+        margin: 0;
+    }
+    
     .days li {
         width: 11%;
     }
