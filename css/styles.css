@@ -316,9 +316,10 @@ main h1, h2, h3 {
 }
 
 .days li {
-    padding: 5px 5px 15px 2px;
+    padding: 5px 5px 15px 0;
     display: inline-block;
     width: 12%;
+    text-align: center;
 }
 
 .days li .active {
@@ -474,9 +475,14 @@ footer button:active {
 
 
 
-
-
 /* MEDIA */
+
+@media(max-width: 500px) {
+    .days li {
+        text-align: center;
+        width: 11%;
+    }
+}
 
 @media(min-width: 700px) {
     .search img {
@@ -552,10 +558,6 @@ footer button:active {
 
     .calendar-section {
         width: 700px;
-    }
-
-    .days li {
-        text-align: center;
     }
     
 
