@@ -479,7 +479,7 @@ footer button:active {
 
 @media(max-width: 500px) {
     .days li {
-        width: 11%;
+        width: 11.5%;
     }
 }
 
