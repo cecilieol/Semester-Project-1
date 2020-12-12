@@ -479,7 +479,6 @@ footer button:active {
 
 @media(max-width: 500px) {
     .days li {
-        text-align: center;
         width: 11%;
     }
 }
