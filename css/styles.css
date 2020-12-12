@@ -477,7 +477,11 @@ footer button:active {
 
 /* MEDIA */
 
-
+@media(max-width: 500px) {
+    .days li {
+        width: 11%;
+    }
+}
 
 @media(min-width: 700px) {
     .search img {
