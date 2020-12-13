@@ -307,7 +307,7 @@ main h1, h2, h3 {
 .days {
     background: #ddd;
     margin: 0 0 0 5px;
-    font-size:12px;
+    font-size: 12px;
 }
 
 .weekdays li {
@@ -479,10 +479,6 @@ footer button:active {
 
 @media(max-width: 500px) {
 
-    .days {
-        margin: 0;
-    }
-    
     .days li {
         width: 11%;
     }
