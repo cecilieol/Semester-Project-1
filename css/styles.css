@@ -236,6 +236,8 @@ main h1, h2, h3 {
     text-align: center;
 }
 
+/* Home: Explore */
+
 .explore {
     display: block;
 }
@@ -252,6 +254,8 @@ main h1, h2, h3 {
 .explore-grid img {
     width: 100%;
 }
+
+/* Home: Calendar */
 
 .calendar-section {
     box-sizing: border-box;
@@ -327,6 +331,8 @@ main h1, h2, h3 {
     background: #82FF4B;
     color: white !important;
   }
+
+/* Home page bottom */
 
 .icon-row {
     display: flex;
