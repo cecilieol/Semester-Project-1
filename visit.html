@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-    <title>Community Science Museum</title>
-    <meta name="description" content="Community Science Museum official website." />
+    <title>Community Science Museum - Visit</title>
+    <meta name="description"
+        content="Community Science Museum official website. Find everything you need here to plan your next visit." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/dvw8esl.css">
@@ -11,19 +13,31 @@
 
 <body>
     <header>
-        <a href="index.html"><img src="Visuals/images/icon-1719742.svg" id="logo"> </a>
-        <div class="title">
-            <a href="index.html">
-                <h4>Community Science Museum</h4>
-            </a>
-        </div>
-        <label class="hamburger-label" for="hamburger-menu">
-            <div class="hamburger-icon">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+        <div class="top-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Visuals/images/logo.svg" id="logo">
+                    <div class="title">
+                        <h4>Community Science Museum</h4>
+                    </div>
+                </a>
             </div>
-        </label>
+
+            <div class="search full">
+                <img src="visuals/icons/searching-magnifying-glass.png">
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="hamburger">
+                <label class="hamburger-label" for="hamburger-menu">
+                    <div class="hamburger-icon">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </label>
+            </div>
+        </div>
         <input type="checkbox" id="hamburger-menu">
         <div class="navbar">
             <div class="dropdown">
@@ -50,49 +64,83 @@
                     <a href="contact.html">Contact</a>
                 </div>
             </div>
+            <div class="search compact">
+                <img src="visuals/icons/searching-magnifying-glass.png">
+                <input type="text" placeholder="Search...">
+            </div>
         </div>
     </header>
     <main>
         <h1>Visit</h1>
-        <div class="info-grid">
-            <div class="grid-view">
-                <h2>Location</h2>
-                <p>The museum is located at 321 Science Road, 123 Museum Town.</p>
-            </div>
-            <div class="grid-view">
-                <h2>Admission</h2>
-                <p>The entrance is free for all.</p>
-                <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and
-                    include a handy printed guide of the museum.</p>
-                <p>If you would like to organize a guided tour for your group of 6 or more people, please contact us to
-                    arrange the tour.</p>
-            </div>
-            <div class="grid-view">
-                <h2>Hours</h2>
-                <p>Monday: Closed</p>
-                <p>Tuesday: 10:00 to 16:00</p>
-                <p>Wednesday: 10:00 to 16:00</p>
-                <p>Thursday: 10:00 to 16:00</p>
-                <p>Friday: 10:00 to 19:00</p>
-                <p>Saturday: 9:00 to 16:00</p>
-                <p>Sunday: 9:00 to 13:00</p>
-            </div>
-            <div class="grid-view">
-                <h2>Accessibility</h2>
-                <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for
-                    the visually impaired.</p>
-            </div>
-            <div class="grid-view">
-                <h2>Food and drink</h2>
-                <p>There is a cafe attached to the museum where you can get light lunches, soft drinks, coffee, snacks
-                    and more.
-                </p>
-            </div>
-            <div class="grid-view">
-                <h2>Shop</h2>
-                <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that
-                    allow you to continue to explore science even after you've left the museum.</p>
+        <div class="visit">
+            <div class="info-grid">
+                <div class="grid-view">
+                    <img src="visuals/images/toa-heftiba-412579.jpg">
+                    <img src="visuals/images/luke-ellis-craven-400722.jpg">
+                </div>
+                <div class="grid-view">
+                    <h2>Location</h2>
+                    <p>The museum is located at 321 Science Road, 123 Museum Town.</p>
+                    <h2>Admission</h2>
+                    <p>The entrance is free for all.</p>
+                    <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and
+                        include a handy printed guide of the museum.</p>
+                    <p>If you would like to organize a guided tour for your group of 6 or more people, please contact us
+                        to
+                        arrange the tour.</p>
+                    <h2>Hours</h2>
+                    <p>Monday: Closed</p>
+                    <p>Tuesday: 10:00 to 16:00</p>
+                    <p>Wednesday: 10:00 to 16:00</p>
+                    <p>Thursday: 10:00 to 16:00</p>
+                    <p>Friday: 10:00 to 19:00</p>
+                    <p>Saturday: 9:00 to 16:00</p>
+                    <p>Sunday: 9:00 to 13:00</p>
+                    <h2>Accessibility</h2>
+                    <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs
+                        for
+                        the visually impaired.</p>
+                    <h2>Food and drink</h2>
+                    <p>There is a cafe attached to the museum where you can get light lunches, soft drinks, coffee,
+                        snacks
+                        and more.
+                    </p>
+                    <h2>Shop</h2>
+                    <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs
+                        that
+                        allow you to continue to explore science even after you've left the museum.</p>
+                </div>
             </div>
         </div>
     </main>
+    <footer>
+        <section class="footer-row">
+            <div class="footer-info">
+                <h4>Newsletter</h4>
+                <button>Sign up here</button>
+            </div>
+
+            <div class="footer-info">
+                <h4>Social media</h4>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>TikTok</p>
+            </div>
+
+            <div class="footer-info">
+                <h4>Contact us</h4>
+                <p>Phone: 12 34 56 78</p>
+                <p>E-mail: contact@csm.com</p>
+                <a href="contact.html">Send us a message here</a>
+            </div>
+
+            <div class="footer-info">
+                <h4>Visiting address</h4>
+                <p>321 Science Road</p>
+                <p>123 Museum Town</p>
+            </div>
+        </section>
+    </footer>
 </body>
+
+</html>

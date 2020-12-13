@@ -176,7 +176,7 @@ header {
 }
 
 .button1 {
-    top: 35%;
+    top: 30%;
     right: 4%;
 }
 
@@ -328,10 +328,6 @@ main h1, h2, h3 {
     color: white !important;
   }
 
-.calendar {
-
-}
-
 .icon-row {
     display: flex;
     flex-wrap: wrap;
@@ -377,12 +373,16 @@ main h1, h2, h3 {
     width: 100%;
 }
 
-/* About */
+/* About, visit */
 
 .about {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+}
+
+.visit img {
+    display: none;
 }
 
 /* Contact */
@@ -436,6 +436,7 @@ footer {
     width: 100%;
     min-height: 200px;
     margin-bottom: -30px;
+    margin-top: 20px;
 }
 
 .footer-row {
@@ -585,12 +586,6 @@ footer button:active {
         height: 100%;
     }
 
-    .special-events, .visit, .get-involved {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .contact fieldset {
         width: 700px;
         margin-left: auto;
@@ -620,6 +615,26 @@ footer button:active {
         bottom: 25%;
         left: 0%;
         position: absolute;
+    }
+
+    .button1 {
+        top: 30%;
+        right: 4%;
+    }
+    
+    .button2 {
+        top: 35%;
+        left: 9%;
+    }
+    
+    .button3 {
+        top: 30%;
+        left: 35%;
+    }
+    
+    .button4 {
+        top: 8%;
+        left: 35%;
     }
 
     .pop-up {
@@ -654,10 +669,17 @@ footer button:active {
 
     .about {
         width: 80%;
+        overflow: hidden;
     }
 
-    .about img {
+    .about img, .visit img {
         float: left;
         margin: 0 10px 0 10px;
+    }
+}
+
+@media(min-width: 1050px) {
+    .visit img {
+        display: block;
     }
 }
