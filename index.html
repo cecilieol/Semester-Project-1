@@ -12,119 +12,98 @@
 
 <body>
     <header>
-        <div class="top-header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="Visuals/images/logo.svg" id="logo">
-                    <div class="title">
-                        <h4>Community Science Museum</h4>
-                    </div>
-                </a>
-            </div>
-
-            <div class="search full">
-                <img src="visuals/icons/searching-magnifying-glass.png">
-                <input type="text" placeholder="Search...">
-            </div>
-
-            <div class="hamburger">
-                <label class="hamburger-label" for="hamburger-menu">
-                    <div class="hamburger-icon">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                </label>
-            </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Visuals/images/logo.svg" id="logo" alt="Commynity Science Museum logo">
+            </a>
         </div>
-        <input type="checkbox" id="hamburger-menu">
-        <div class="navbar">
-            <div class="dropdown">
-                <button class="dropbutton">Explore</button>
-                <div class="dropdown-content">
-                    <a href="kids.html">For Kids</a>
-                    <a href="teachers.html">For Teachers</a>
-                    <a href="researchers.html">For Researchers</a>
+
+        <div class="hamburger-menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="clear"></div>
+
+        <nav>
+            <section class="nav-dropdown">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <img src="visuals/icons/searching-magnifying-glass.png">
                 </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbutton">Exhibitions</button>
-                <div class="dropdown-content">
-                    <a href="exhibitions.html">Permanent Exhibitions</a>
-                    <a href="special-events.html">Special Events</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbutton">Information</button>
-                <div class="dropdown-content">
-                    <a href="visit.html">Visit</a>
-                    <a href="get-involved.html">Get Involved</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-            <div class="search compact">
-                <img src="visuals/icons/searching-magnifying-glass.png">
-                <input type="text" placeholder="Search...">
-            </div>
+            </section>
+
+            <section class="nav-dropdown">
+                <p class="expand-explore">Explore</p>
+                <p class="noexpand">Explore</p>
+                <ul class="explore-list">
+                    <li><a href="kids.html">For Kids</a></li>
+                    <li><a href="teachers.html">For Teachers</a></li>
+                    <li><a href="researchers.html">For Researchers</a></li>
+                </ul>
+            </section>
+    
+            <section class="nav-dropdown">
+                <p class="expand-exhibitions">Exhibitions</p>
+                <p class="noexpand">Exhibitions</p>
+                <ul class="exhibitions-list">
+                    <li><a href="exhibitions.html">Permanent Exhibitions</a></li>
+                    <li><a href="special-events.html">Special Events</a></li>
+                </ul>
+            </section>
+            
+            <section class="nav-dropdown">
+                <p class="expand-information">Information</p>
+                <p class="noexpand">Information</p>
+                <ul class="information-list">
+                    <li><a href="visit.html">Visit</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+        <div class="search-bar-big">
+            <input type="text" placeholder="Search...">
         </div>
     </header>
     <main>
-        <input type="checkbox" id="button1">
-        <input type="checkbox" id="button2">
-        <input type="checkbox" id="button3">
-        <input type="checkbox" id="button4">
-        <div class="main-photo">
-            <div class="checkbox-buttons">
-                <label class="button1" for="button1"><img src="Visuals/images/logo-middle.svg"></label>
-                <label class="button2" for="button2"><img src="Visuals/images/logo-middle.svg"></label>
-                <label class="button3" for="button3"><img src="Visuals/images/logo-middle.svg"></label>
-                <label class="button4" for="button4"><img src="Visuals/images/logo-middle.svg"></label>
-            </div>
-            <img src="visuals/images/exhibition-1863344_1920.jpg" alt="Museum exhibition">
-            <fieldset>
-                <img src="visuals/icons/light-bulb-2.png">
-                <p>Click on the dots to read more about our exhibitions.</p>
-            </fieldset>
-        </div>
-        <div class="pop-up">
-            <fieldset>
-                <h3>Exhibition name</h3>
-                <p>Short introduction to chosen exhibition.</p>
-                <a href="exhibitions.html">Click here to read more.</a>
-            </fieldset>
-        </div>
         <div class="main-intro">
             <h1>Welcome to the Community Science Museum</h1>
             <h2>Let's explore together</h2>
         </div>
-        <div class="explore">
-            <div class="explore-grid">
+        <div class="explore-carousel">
+            <div class="explore-slide">
                 <a href="kids.html">
-                    <img src="visuals/images/billetto-editorial-334686.jpg" alt="For kids">
+                    <img src="visuals/images/billetto-editorial-334686.jpg" alt="Explore for kids">
                     <h3>For kids</h3>
                 </a>
             </div>
-            <div class="explore-grid">
+            <div class="explore-slide">
                 <a href="teachers.html">
-                    <img src="Visuals/images/library-1132573_1920.jpg" alt="For teachers">
+                    <img src="Visuals/images/library-1132573_1920.jpg" alt="Explore for teachers">
                     <h3>For teachers</h3>
                 </a>
             </div>
-            <div class="explore-grid">
+            <div class="explore-slide">
                 <a href="researchers.html">
-                    <img src="visuals/images/people-219985_1280.jpg" alt="For researchers">
+                    <img src="visuals/images/people-219985_1280.jpg" alt="Explore for researchers">
                     <h3>For researchers</h3>
                 </a>
             </div>
+
+            <a class="prev" onclick="prevSlide(-1)">&#10094;</a>
+            <a class="next" onclick="nextSlide(1)">&#10095;</a>
+
         </div>
         <h2>Event Calendar</h2>
         <div class="calendar-section">
             <fieldset>
                 <div class="month">
                     <ul>
-                        <li class="prev">&#10094;</li>
-                        <li class="next">&#10095;</li>
+                        <li class="prev-month">&#10094;</li>
+                        <li class="next-month">&#10095;</li>
                         <li>
                             <h3>January 2021</h3>
                         </li>
@@ -193,37 +172,37 @@
             <div class="icon-column">
                 <a href="visit.html">
                     <img src="visuals/icons/location.png">
-                    <h3>Location</h3>
+                    <h4>Location</h4>
                 </a>
             </div>
             <div class="icon-column">
                 <a href="visit.html">
                     <img src="Visuals/icons/admission.png">
-                    <h3>Admission</h3>
+                    <h4>Admission</h4>
                 </a>
             </div>
             <div class="icon-column">
                 <a href="visit.html">
                     <img src="Visuals/icons/hours.png">
-                    <h3>Hours</h3>
+                    <h4>Hours</h4>
                 </a>
             </div>
             <div class="icon-column">
                 <a href="visit.html">
                     <img src="Visuals/icons/accessibility.png">
-                    <h3>Accessibility</h3>
+                    <h4>Accessibility</h4>
                 </a>
             </div>
             <div class="icon-column">
                 <a href="visit.html">
                     <img src="Visuals/icons/fooddrink.png">
-                    <h3>Food & Drink</h3>
+                    <h4>Food & Drink</h4>
                 </a>
             </div>
             <div class="icon-column">
                 <a href="visit.html">
                     <img src="Visuals/icons/shop.png">
-                    <h3>Shop</h3>
+                    <h4>Shop</h4>
                 </a>
             </div>
         </div>
@@ -232,10 +211,22 @@
         <div class="share">
             <h4>Tag @CommunityScienceMuseum on social media and show everyone what you explored on your visit.</h4>
             <div class="share-row">
-                <img src="visuals/images/instagram1.jpg" alt="Instagram post">
-                <img src="visuals/images/instagram2.jpg" alt="Instagram post">
-                <img src="visuals/images/instagram3.jpg" alt="Instagram post">
-                <img src="visuals/images/instagram4.jpg" alt="Instagram post">
+                <div class="share-column">
+                    <img src="visuals/images/instagram1.jpg" alt="Instagram post">
+                    <p>@InstagramUsername</p>
+                </div>
+                <div class="share-column">
+                    <img src="visuals/images/instagram2.jpg" alt="Instagram post">
+                    <p>@InstagramUsername</p>
+                </div>
+                <div class="share-column">
+                    <img src="visuals/images/instagram3.jpg" alt="Instagram post">
+                    <p>@InstagramUsername</p>
+                </div>
+                <div class="share-column">
+                    <img src="visuals/images/instagram4.jpg" alt="Instagram post">
+                    <p>@InstagramUsername</p>
+                </div>
             </div>
         </div>
     </main>
@@ -269,5 +260,5 @@
         </section>
     </footer>
 </body>
-
+<script src="js/script.js"></script>
 </html>

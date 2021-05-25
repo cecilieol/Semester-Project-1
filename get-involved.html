@@ -13,61 +13,60 @@
 
 <body>
     <header>
-        <div class="top-header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="Visuals/images/logo.svg" id="logo">
-                    <div class="title">
-                        <h4>Community Science Museum</h4>
-                    </div>
-                </a>
-            </div>
-
-            <div class="search full">
-                <img src="visuals/icons/searching-magnifying-glass.png">
-                <input type="text" placeholder="Search...">
-            </div>
-
-            <div class="hamburger">
-                <label class="hamburger-label" for="hamburger-menu">
-                    <div class="hamburger-icon">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                </label>
-            </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Visuals/images/logo.svg" id="logo" alt="Commynity Science Museum logo">
+            </a>
         </div>
-        <input type="checkbox" id="hamburger-menu">
-        <div class="navbar">
-            <div class="dropdown">
-                <button class="dropbutton">Explore</button>
-                <div class="dropdown-content">
-                    <a href="kids.html">For Kids</a>
-                    <a href="teachers.html">For Teachers</a>
-                    <a href="researchers.html">For Researchers</a>
+
+        <div class="hamburger-menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="clear"></div>
+
+        <nav>
+            <section class="nav-dropdown">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <img src="visuals/icons/searching-magnifying-glass.png">
                 </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbutton">Exhibitions</button>
-                <div class="dropdown-content">
-                    <a href="exhibitions.html">Permanent Exhibitions</a>
-                    <a href="special-events.html">Special Events</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbutton">Information</button>
-                <div class="dropdown-content">
-                    <a href="visit.html">Visit</a>
-                    <a href="get-involved.html" class="active">Get Involved</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-            <div class="search compact">
-                <img src="visuals/icons/searching-magnifying-glass.png">
-                <input type="text" placeholder="Search...">
-            </div>
+            </section>
+
+            <section class="nav-dropdown">
+                <p class="expand-explore">Explore</p>
+                <p class="noexpand">Explore</p>
+                <ul class="explore-list">
+                    <li><a href="kids.html">For Kids</a></li>
+                    <li><a href="teachers.html">For Teachers</a></li>
+                    <li><a href="researchers.html">For Researchers</a></li>
+                </ul>
+            </section>
+    
+            <section class="nav-dropdown">
+                <p class="expand-exhibitions">Exhibitions</p>
+                <p class="noexpand">Exhibitions</p>
+                <ul class="exhibitions-list">
+                    <li><a href="exhibitions.html">Permanent Exhibitions</a></li>
+                    <li><a href="special-events.html">Special Events</a></li>
+                </ul>
+            </section>
+            
+            <section class="nav-dropdown">
+                <p class="expand-information">Information</p>
+                <p class="noexpand">Information</p>
+                <ul class="information-list">
+                    <li><a href="visit.html">Visit</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+        <div class="search-bar-big">
+            <input type="text" placeholder="Search...">
         </div>
     </header>
     <main>
@@ -131,5 +130,6 @@
         </section>
     </footer>
 </body>
+<script src="js/script.js"></script>
 
 </html>
