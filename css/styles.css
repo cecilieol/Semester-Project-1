@@ -84,8 +84,7 @@ header {
 nav {
   display: none;
   text-align: center;
-  height: 80vh;
-  width: 80vw;
+  height: 100vh;
 }
 
 nav ul {
@@ -113,7 +112,7 @@ nav a {
   color: black;
   text-decoration: none;
   font-size: 22px;
-  line-height: 150%;
+  line-height: 100%;
 }
 
 .clear {
