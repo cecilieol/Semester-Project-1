@@ -1,27 +1,3 @@
-/* Hamburger menu */
-
-const hamburger = document.querySelector(".hamburger-menu");
-const header = document.querySelector("header");
-const nav = document.querySelector("nav");
-const mainContent = document.querySelector("main");
-const mediaQuerySmall = window.matchMedia("(max-width: 931px)");
-
-if (mediaQuerySmall.matches) {
-    activateHambuger();
-}
-
-function activateHambuger() {
-    if (nav.style.display === "none") {
-        nav.style.display = "block";
-        mainContent.style.display = "none";
-    } else {
-        nav.style.display = "none";
-        mainContent.style.display = "block";
-    }
-}
-
-hamburger.addEventListener("click", activateHambuger);
-
 /* Desktop dropdown menu */
 
 const expandExplore = document.querySelector(".expand-explore");
@@ -30,7 +6,7 @@ const expandInformation = document.querySelector(".expand-information");
 const exploreList = document.querySelector(".explore-list");
 const exhibitionsList = document.querySelector(".exhibitions-list");
 const informationList = document.querySelector(".information-list");
-const expandSearch = document.querySelector(".search-bar");
+const expandSearch = document.querySelector(".search-bar img");
 const searchBar = document.querySelector(".search-bar-big");
 const mediaQueryBig = window.matchMedia("(min-width: 931px)");
 
@@ -102,6 +78,31 @@ window.onclick = function(event) {
         searchBar.style.display = "none";
     }
 }
+
+/* Hamburger menu */
+
+const hamburger = document.querySelector(".hamburger-menu");
+const header = document.querySelector("header");
+const nav = document.querySelector("nav");
+const mainContent = document.querySelector("main");
+const mediaQuerySmall = window.matchMedia("(max-width: 931px)");
+
+if (mediaQuerySmall.matches) {
+    activateHambuger();
+    expandSearch.removeEventListener("click", expandSearchBar);
+}
+
+function activateHambuger() {
+    if (nav.style.display === "none") {
+        nav.style.display = "block";
+        mainContent.style.display = "none";
+    } else {
+        nav.style.display = "none";
+        mainContent.style.display = "block";
+    }
+}
+
+hamburger.addEventListener("click", activateHambuger);
 
 
 /* Carousel */
