@@ -509,7 +509,7 @@ footer button:hover {
 @media (max-width: 500px) {
   .explore-slide button {
     top: 28%;
-    left: 26%;
+    left: 25%;
   }
 
   .prev,
