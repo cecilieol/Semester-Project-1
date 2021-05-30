@@ -190,7 +190,7 @@ h3 {
   left: 27%;
   padding: 20px 0 20px 0;
   position: absolute;
-  background-color: rgb(131, 238, 121, 0.5);
+  background-color: rgb(131, 238, 121, 0.8);
   width: 50%;
   border-radius: 200px;
   border: none;
@@ -216,7 +216,7 @@ h3 {
   padding: 15px;
   position: absolute;
   top: 35%;
-  background-color: rgb(131, 238, 121, 0.5);
+  background-color: rgb(131, 238, 121, 0.8);
   transition: 0.4s;
   border-radius: 3px;
   border: none;
@@ -507,8 +507,14 @@ footer button:hover {
 /* MEDIA */
 
 @media (max-width: 500px) {
-  .days li {
-    width: 11%;
+  .explore-slide button {
+    top: 33%;
+    left: 27%;
+  }
+
+  .prev,
+  .next {
+    top: 35%;
   }
 }
 
@@ -533,10 +539,12 @@ footer button:hover {
     left: 35%;
     padding: 40px 0 40px 0;
     width: 30%;
+    background-color: rgb(131, 238, 121, 0.6);
   }
 
   .prev,
   .next {
+    background-color: rgb(131, 238, 121, 0.6);
     top: 43%;
   }
 
