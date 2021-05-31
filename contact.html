@@ -72,19 +72,19 @@
         <h1>Contact</h1>
         <div class="contact">
             <fieldset>
-                <form action="action_page.php">
+                <form>
 
-                    <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="Your first name..">
-
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your first name..">
+                    <div class="form-error" id="fullname-error">Please enter your full name (minimum 4 characters)</div>
 
                     <label for="email">E-mail address</label>
                     <input type="text" id="email" name="email" placeholder="Your e-mail address..">
+                    <div class="form-error" id="email-error">Please enter a valid e-mail address</div>
 
                     <label for="category">Category</label>
                     <select id="category" name="category">
+                        <option selected disabled value="">Choose a category</option>
                         <option value="tours">Organized tours</option>
                         <option value="student">Student tours</option>
                         <option value="research">Research</option>
@@ -94,11 +94,17 @@
                         <option value="internships">Internships</option>
                         <option value="other">Other</option>
                     </select>
+                    <div class="form-error" id="category-error">Please choose a category</div>
 
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" placeholder="Write something.."></textarea>
+                    <div class="form-error" id="message-error">Please write a message (minimum 30 characters)</div>
 
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" id="submit">
+
+                    <div class="submitted">
+                        <p>Your form has been submitted!</p>
+                    </div>
 
                 </form>
             </fieldset>
@@ -136,5 +142,6 @@
 
 </body>
 <script src="js/script.js"></script>
+<script src="js/contact.js"></script>
 
 </html>
