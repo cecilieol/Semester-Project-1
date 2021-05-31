@@ -90,6 +90,7 @@ nav {
   display: none;
   text-align: center;
   margin: 0;
+  margin-top: -15px;
   height: 87vh;
   background-color: rgb(131, 238, 121);
 }
@@ -569,6 +570,7 @@ footer button:hover {
     justify-content: space-between;
     align-items: flex-start;
     position: absolute;
+    height: auto;
   }
 
   .logo {
