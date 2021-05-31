@@ -158,13 +158,18 @@ nav a {
 
 main {
   margin: 10px;
-  margin-top: 150px;
 }
 
 main h1,
 h2,
 h3 {
   text-align: center;
+}
+
+.main-intro {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: rgb(241, 255, 230);
 }
 
 /* Home: Explore Carousel */
@@ -425,10 +430,14 @@ h3 {
 .contact textarea,
 .contact label,
 .contact input[type="submit"] {
-  width: 90%;
-  margin: 15px;
-  padding: 5px;
-  resize: vertical;
+  width: 95%;
+  margin: 10px;
+}
+
+.form-error {
+  display: none;
+  margin: 0 0 15px 10px;
+  color: red !important;
 }
 
 .contact input[type="text"],
@@ -436,25 +445,41 @@ h3 {
 .contact textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
+  padding: 5px;
 }
 
 .contact input[type="text"],
 .contact select {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+#message {
+  height: 150px;
+  max-height: 500px;
+  max-width: 660px;
 }
 
 .contact input[type="submit"] {
-  border: 1px solid #ec7e0f;
+  border: 1px solid #fc9d3d;
   border-radius: 4px;
   color: #000;
-  background-color: #ff8c1a;
+  background-color: #fc9d3d;
+  padding: 5px;
 }
 
 .contact input[type="submit"]:active {
   color: #000;
-  background-color: #ff5a03;
+  background-color: #ff772e;
   font-weight: 600;
+}
+
+.submitted {
+  display: none;
+}
+
+.submitted p {
+  color: green;
+  margin: 10px;
 }
 
 /* Footer */
@@ -519,6 +544,12 @@ footer button:hover {
 }
 
 @media (min-width: 700px) {
+  #main-content {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .explore {
     display: flex;
     flex-wrap: wrap;
@@ -598,6 +629,7 @@ footer button:hover {
   main {
     margin-right: auto;
     margin-left: auto;
+    margin-top: 150px;
   }
 
   /* HEADER */
@@ -666,6 +698,7 @@ footer button:hover {
   .expand-exhibitions,
   .expand-information {
     display: inline-flex;
+    padding: 0;
   }
 
   .search-bar input[type="text"] {
