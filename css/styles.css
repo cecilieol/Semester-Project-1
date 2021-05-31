@@ -55,6 +55,7 @@ header {
   background-color: rgb(131, 238, 121);
   top: 0;
   width: 100%;
+  height: auto;
   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
 }
 
@@ -116,7 +117,7 @@ nav p {
 nav a {
   color: black;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 120%;
 }
 
