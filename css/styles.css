@@ -55,7 +55,6 @@ header {
   background-color: rgb(131, 238, 121);
   top: 0;
   width: 100%;
-  max-height: 100vh;
   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
 }
 
@@ -90,7 +89,6 @@ nav {
   display: none;
   text-align: center;
   margin: 0;
-  padding-bottom: 50px;
   background-color: rgb(131, 238, 121);
 }
 

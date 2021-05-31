@@ -96,10 +96,12 @@ if (mediaQuerySmall.matches) {
 function activateHambuger() {
     if (nav.style.display === "none") {
         nav.style.display = "block";
+        header.style.height = "100vh";
         mainContent.style.display = "none";
         footer.style.display = "none";
     } else {
         nav.style.display = "none";
+        header.style.height = "auto";
         mainContent.style.display = "block";
         footer.style.display = "block";
     }
