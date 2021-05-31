@@ -376,6 +376,12 @@ h3 {
   padding-bottom: 15px;
 }
 
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .grid-view {
   display: block;
   width: 90%;
@@ -580,8 +586,6 @@ footer button:hover {
   }
 
   .info-grid {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
   }
 
