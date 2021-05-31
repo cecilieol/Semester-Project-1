@@ -6,7 +6,7 @@ const expandInformation = document.querySelector(".expand-information");
 const exploreList = document.querySelector(".explore-list");
 const exhibitionsList = document.querySelector(".exhibitions-list");
 const informationList = document.querySelector(".information-list");
-const expandSearch = document.querySelector(".search-bar img");
+const expandSearch = document.querySelector(".search-bar");
 const searchBar = document.querySelector(".search-bar-big");
 const mediaQueryBig = window.matchMedia("(min-width: 931px)");
 
@@ -85,6 +85,7 @@ const hamburger = document.querySelector(".hamburger-menu");
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 const mainContent = document.querySelector("main");
+const footer = document.querySelector("footer");
 const mediaQuerySmall = window.matchMedia("(max-width: 931px)");
 
 if (mediaQuerySmall.matches) {
@@ -96,9 +97,11 @@ function activateHambuger() {
     if (nav.style.display === "none") {
         nav.style.display = "block";
         mainContent.style.display = "none";
+        footer.style.display = "none";
     } else {
         nav.style.display = "none";
         mainContent.style.display = "block";
+        footer.style.display = "block";
     }
 }
 
@@ -138,7 +141,7 @@ function initSlides(x) {
 
 /* Refresh on resize to update navigation */
 
-const mediaQueryDesktop = window.matchMedia("(min-width: 550px)");
+const mediaQueryDesktop = window.matchMedia("(max-width: 931px)");
 
 window.onresize = function () { 
     if (mediaQueryDesktop.matches) {
