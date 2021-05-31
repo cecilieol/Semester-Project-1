@@ -141,7 +141,7 @@ function initSlides(x) {
 
 /* Refresh on resize to update navigation */
 
-const mediaQueryDesktop = window.matchMedia("(max-width: 931px)");
+const mediaQueryDesktop = window.matchMedia("(min-width: 931px)");
 
 window.onresize = function () { 
     if (mediaQueryDesktop.matches) {
