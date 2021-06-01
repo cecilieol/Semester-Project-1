@@ -204,7 +204,7 @@ h3 {
   font-size: 30px;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
-  top: 28%;
+  top: 23%;
   left: 27%;
   padding: 20px 0 20px 0;
   position: absolute;
@@ -233,7 +233,7 @@ h3 {
   justify-content: space-evenly;
   padding: 15px;
   position: absolute;
-  top: 30%;
+  top: 25%;
   background-color: rgb(131, 238, 121, 0.8);
   transition: 0.4s;
   border-radius: 3px;
