@@ -6,8 +6,7 @@ body {
 h1,
 h2,
 h3,
-h4,
-.dropbutton {
+h4 {
   font-family: futura-pt, sans-serif;
   font-style: normal;
 }
@@ -49,14 +48,27 @@ a:active {
   font-weight: 500;
 }
 
+.return-button {
+  border: none;
+  font-size: 18px;
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.return-button:active {
+  color: black;
+}
+
 /* HEADER */
 
 header {
   background-color: rgb(131, 238, 121);
   top: 0;
   width: 100%;
-  height: auto;
   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .logo {
@@ -228,8 +240,13 @@ h3 {
   border: none;
 }
 
+.prev {
+  float: left;
+}
+
 .next {
   right: 10px;
+  float: right;
 }
 
 .prev:hover,
@@ -237,14 +254,6 @@ h3 {
   background-color: rgb(131, 238, 121);
   transition: 0.4s;
   text-decoration: none;
-}
-
-.prev {
-  float: left;
-}
-
-.next {
-  float: right;
 }
 
 /* Home page bottom */
@@ -310,8 +319,6 @@ h3 {
   display: block;
   width: 90%;
   margin-bottom: 10px;
-  border: 1px solid rgb(131, 238, 121);
-  border-radius: 8px;
 }
 
 .grid-view img {
@@ -395,8 +402,10 @@ h3 {
   color: #000;
   background-color: #fc9d3d;
   padding: 5px;
+  cursor: pointer;
 }
 
+.contact input[type="submit"]:hover,
 .contact input[type="submit"]:active {
   color: #000;
   background-color: #ff772e;
@@ -557,10 +566,8 @@ footer button:hover {
   main {
     margin-right: auto;
     margin-left: auto;
-    margin-top: 150px;
+    margin-top: 120px;
   }
-
-  /* HEADER */
 
   header {
     display: flex;
@@ -661,12 +668,44 @@ footer button:hover {
   .about img,
   .visit img {
     float: left;
-    margin: 0 10px 0 10px;
+    margin: 0 15px 0 15px;
   }
 }
 
 @media (min-width: 1050px) {
   .visit img {
     display: block;
+  }
+}
+
+@media (min-width: 1700px) {
+  body,
+  header {
+    max-width: 1700px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .explore-carousel {
+    max-height: 800px;
+  }
+
+  .explore-slide button {
+    top: 30%;
+  }
+
+  .prev,
+  .next {
+    top: 32%;
+  }
+
+  .next {
+    right: 5.6%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .next {
+    right: 20.5%;
   }
 }
