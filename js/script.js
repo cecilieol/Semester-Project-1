@@ -109,44 +109,12 @@ function activateHambuger() {
 
 hamburger.addEventListener("click", activateHambuger);
 
+/* Return button */
 
-/* Carousel */
+const returnButton = document.querySelector(".return-button");
 
-var index = 1;
-initSlides(index);
-
-function prevSlide(x) {
-    initSlides(index += x);
+function previousPage() {
+    window.history.back();
 }
 
-function nextSlide(x) {
-    initSlides(index += x)
-}
-
-function initSlides(x) {
-    const slide = document.querySelectorAll(".explore-slide");
-
-    if (x < 1) {
-        index = slide.length;
-    }
-
-    if (x > slide.length) {
-        index = 1;
-    }
-
-    for (i = 0; i < slide.length; i++) {
-        slide[i].style.display = "none";
-    }
-
-    slide[index-1].style.display = "block";
-}
-
-/* Refresh on resize to update navigation */
-
-const mediaQueryDesktop = window.matchMedia("(min-width: 931px)");
-
-window.onresize = function () { 
-    if (mediaQueryDesktop.matches) {
-        window.location.reload();
-    }
-};
+returnButton.addEventListener("click", previousPage);
