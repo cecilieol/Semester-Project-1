@@ -96,6 +96,9 @@ if (mediaQuerySmall.matches) {
 function activateHambuger() {
     if (nav.style.display === "none") {
         nav.style.display = "block";
+        exploreList.style.display = "block";
+        exhibitionsList.style.display = "block";
+        informationList.style.display = "block";
         header.style.height = "100vh";
         mainContent.style.display = "none";
         footer.style.display = "none";
