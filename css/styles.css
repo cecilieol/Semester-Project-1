@@ -182,7 +182,8 @@ h3 {
 .main-intro {
   margin-top: 15px;
   padding: 10px;
-  background-color: rgb(220, 247, 199);
+  background-color: rgb(243, 255, 233);
+  box-shadow: 0 3px 4px rgb(0, 0, 0, 0.1);
 }
 
 /* Home: Explore Carousel */
