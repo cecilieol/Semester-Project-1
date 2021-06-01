@@ -177,12 +177,13 @@ main h1,
 h2,
 h3 {
   text-align: center;
+  opacity: 100%;
 }
 
 .main-intro {
   margin-top: 15px;
   padding: 10px;
-  background-color: rgb(243, 255, 233);
+  background-color: rgb(147, 233, 140, 0.3);
   box-shadow: 0 3px 4px rgb(0, 0, 0, 0.1);
 }
 
