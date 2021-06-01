@@ -344,6 +344,10 @@ h3 {
   width: 90%;
 }
 
+.about img {
+  width: 100%;
+}
+
 .visit img {
   display: none;
 }
@@ -363,11 +367,15 @@ h3 {
 }
 
 .contact input[type="text"],
-.contact select,
 .contact textarea,
-.contact label,
+.contact label {
+  width: 90%;
+  margin: 10px;
+}
+
+.contact select,
 .contact input[type="submit"] {
-  width: 95%;
+  width: 93%;
   margin: 10px;
 }
 
@@ -544,11 +552,26 @@ footer button:hover {
     height: 100%;
   }
 
+  .about img {
+    width: auto;
+  }
+
   .contact fieldset {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+  }
+
+  .contact input[type="text"],
+  .contact textarea,
+  .contact label {
+    width: 95%;
+  }
+
+  .contact select,
+  .contact input[type="submit"] {
+    width: 96%;
   }
 
   .footer-row {
